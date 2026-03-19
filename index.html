@@ -20,12 +20,12 @@
             <legend> Student Details </legend>
 
             <p><label for="studentID"> Student ID:  </label> 
-            <input type="text" name= "student" id="studentID" required="required"/></p>
+            <input type="text" name= "student" id="studentID" required="required" minlength="7" maxlength="10"/></p>
 
             <label for="fName"> Given Name:</label>
-            <input type="text" name="studenntFName" id="fName" required="required">
+            <input type="text" name="studenntFName" id="fName" required="required" pattern="[A-Za-z]{0,15}" maxlength="15">
             <label for="lName"> Family Name: </label>
-            <input type="text" name="studentLName" id="lName" required="required">
+            <input type="text" name="studentLName" id="lName" required="required" pattern="[A-Za-z]{0,15}" maxlength="15">
 
         </fieldset>
         <fieldset>
@@ -39,7 +39,7 @@
             <label for="COS6007">COS6007</label><br><br>
 
             <label for="tutor">Your Tutor:</label>
-            <select name="tutor" id="tutor">
+            <select name="tutor" id="tutor" required>
                 <option value=""> Please Select </option>
                 <option value="James"> Tutor James </option>
                 <option value="Lucy"> Tutor Lucy </option>
@@ -73,8 +73,10 @@
             <label for="time"> Time: </label>
             <input type="time" name="time" id="time" placeholder="00:00">
         </fieldset>
-        
+    <input type= "submit" value="Book"/>
+	<input type= "reset" value="Reset Form"/>  
     </form>
+    
 
 </body>
 </html>
