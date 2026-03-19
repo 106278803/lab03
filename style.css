@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    outline: 1px; 
+    outline-style: solid;
+    padding: 2px;
+}
