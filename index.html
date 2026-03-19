@@ -6,6 +6,70 @@
     <title>Web Forms</title>
 </head>
 <body>
-    
+    <img src="logo.png">
+    <h1> CWA Helpdesk Appointment. </h1>
+    <p> The help desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday. <br> Check blackboard for when CWA tutors will be there.</p>
+
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset> 
+            <legend> Student Details </legend>
+
+            <p><label for="studentID"> Student ID:  </label> 
+            <input type="text" name= "student" id="studentID" required="required"/></p>
+
+            <label for="fName"> Given Name:</label>
+            <input type="text" name="studenntFName" id="fName" required="required">
+            <label for="lName"> Family Name: </label>
+            <input type="text" name="studentLName" id="lName" required="required">
+
+        </fieldset>
+        <fieldset>
+            <legend> Your Unit </legend>
+
+            <input type="radio" name="unit" id="COS10011" value="COS10011">
+            <label for="COS10011">COS10011</label>
+            <input type="radio" name="unit" id="COS60004" value="COS60004">
+            <label for="COS60004">COS60004</label>
+            <input type="radio" name="unit" id="COS6007" value="COS60007">
+            <label for="COS6007">COS6007</label><br><br>
+
+            <label for="tutor">Your Tutor:</label>
+            <select name="tutor" id="tutor">
+                <option value=""> Please Select </option>
+                <option value="James"> Tutor James </option>
+                <option value="Lucy"> Tutor Lucy </option>
+                <option value="Ange"> Tutor Ange </option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend> Issue </legend>
+
+            <label for="HTML"> HTML </label>
+            <input type="checkbox" id="HTML" name="issue" value="HTML" checked="checked">
+            <label for="CSS"> CSS </label>
+            <input type="checkbox" id="CSS" name="issue" value="CSS">
+            <label> JavaScript </label>
+            <input type="checkbox" id="JavaScript" name="issue" value="JavaScript">
+            <label> PHP </label>
+            <input type="checkbox" id="PHP" name="issue" value="PHP">
+            <label> MySQL </label>
+            <input type="checkbox" id="MySQL" name="issue" value="MySQL"><p></p>
+
+            <label for="description"> Description of Issue: </label><br>
+            <textarea id="description" name="description" rows="5" cols="50" placeholder="Enter a description of your issue here...."></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend> Prefered date and time </legend>
+
+            <label for="date"> Date: </label>
+            <input type="date" name="date" id="date" placeholder="dd-mm-yyyy"><br>
+            <label for="time"> Time: </label>
+            <input type="time" name="time" id="time" placeholder="00:00">
+        </fieldset>
+        
+    </form>
+
 </body>
 </html>
