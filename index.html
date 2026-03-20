@@ -11,7 +11,7 @@
     <title>Web Forms</title>
 </head>
 <body>
-    <img src="logo.png">
+    <img src="logo.png" alt="Swinburne logo">
     <h1> CWA Helpdesk Appointment. </h1>
     <p> The help desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday. <br> Check blackboard for when CWA tutors will be there.</p>
 
@@ -20,7 +20,7 @@
             <legend> Student Details </legend>
 
             <p><label for="studentID"> Student ID:  </label> 
-            <input type="text" name= "student" id="studentID" required="required" minlength="7" maxlength="10"/></p>
+            <input type="text" name= "student" id="studentID" required="required" minlength="7" maxlength="10"></p>
 
             <label for="fName"> Given Name:</label>
             <input type="text" name="studenntFName" id="fName" required="required" pattern="[A-Za-z]{0,15}" maxlength="15">
@@ -59,7 +59,7 @@
             <label> PHP 
             <input type="checkbox" id="PHP" name="issue" value="PHP"></label>
             <label> MySQL 
-            <input type="checkbox" id="MySQL" name="issue" value="MySQL"><p></p></label>
+            <input type="checkbox" id="MySQL" name="issue" value="MySQL"></label><p></p>
 
             <label for="description"> Description of Issue: </label><br>
             <textarea id="description" name="description" rows="5" cols="50" placeholder="Enter a description of your issue here...."></textarea>
@@ -69,12 +69,12 @@
             <legend> Prefered date and time </legend>
 
             <label for="date"> Date: </label>
-            <input type="date" name="date" id="date" placeholder="dd-mm-yyyy"><br>
+            <input type="date" name="date" id="date"><br>
             <label for="time"> Time: </label>
-            <input type="time" name="time" id="time" placeholder="00:00">
+            <input type="time" name="time" id="time">
         </fieldset>
-    <input type= "submit" value="Book"/>
-	<input type= "reset" value="Reset Form"/>  
+    <input type= "submit" value="Book">
+	<input type= "reset" value="Reset Form">  
     </form>
     
 
